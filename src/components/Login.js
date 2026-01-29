@@ -27,7 +27,7 @@ function Login(props) {
     e.preventDefault(); //새로고침 방지
 
     //백엔드 서버에 url주소 form데이터를 넘긴다.
-    axios.post('http://localhost:9070/login', form)
+    axios.post('https://web-jinipet-mkvwe9x45fceba4b.sel3.cloudtype.app/ginipet_login', form)
     .then(res=>{
       //jwt 토큰 저장
       localStorage.setItem('token', res.data.token);
@@ -83,5 +83,6 @@ function Login(props) {
     </main>
   );
 }
+
 
 export default Login;
