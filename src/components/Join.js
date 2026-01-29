@@ -35,7 +35,7 @@ function Join(props) {
 
   //4. 아이디 중복체크 기능
   const checkUsername = () => {
-    axios.post('http://localhost:9070/check-username', {
+    axios.post('https://web-jinipet-mkvwe9x45fceba4b.sel3.cloudtype.app/check-username', {
       username: form.username
     })
       .then(res => {
@@ -129,4 +129,5 @@ function Join(props) {
 
 
 export default Join;
+
 
