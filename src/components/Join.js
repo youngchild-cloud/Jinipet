@@ -61,7 +61,7 @@ function Join(props) {
     }
 
     //비밀번호가 일치하면 서버측으로 내용을 전송
-    axios.post('http://localhost:9070/register', form)
+    axios.post('http://localhost:9070/ginipet_register', form)
       .then(() => { //전송성공시
         alert('회원가입이 완료되었습니다. 로그인 페이지로 이동합니다.');
         navigate('/login');//로그인 경로주소
@@ -126,5 +126,6 @@ function Join(props) {
     </main>
   );
 }
+
 
 export default Join;
