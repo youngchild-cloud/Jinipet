@@ -28,7 +28,7 @@ function Login(props) {
 
     //백엔드 서버에 url주소 form데이터를 넘긴다.
     // axios.post('http://localhost:9070/login', form)
-    axios.post('http://https://port-0-backend-express-server-mkvwe9x45fceba4b.sel3.cloudtype.app/login', form)
+    axios.post('//https://port-0-backend-express-server-mkvwe9x45fceba4b.sel3.cloudtype.app/login', form)
       .then(res => {
         //jwt 토큰 저장
         localStorage.setItem('token', res.data.token);
